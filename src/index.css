@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@keyframes dashFlow {
+  to {
+    stroke-dashoffset: -120;
+  }
+}
+
+.animate-dash {
+  animation: dashFlow 2.8s linear infinite;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 16s linear infinite;
+}
